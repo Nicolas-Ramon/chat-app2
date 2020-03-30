@@ -4,14 +4,12 @@ import './Contact.css';
 function Contact () {
     return (
         <div className = 'Contact'>
+            <img className = 'avatar' src="https://randomuser.me/api/portraits/men/89.jpg" alt="logo"></img>
             <div>
-                <img className = 'avatar' src="https://randomuser.me/api/portraits/men/89.jpg" alt="logo"></img>
-            </div>
-            <div>
-                <p className = 'name'>Alexander George</p>
+                <h4 className = 'name'>Alexander George</h4>
                 <div className = 'status'>
-                    <p className = 'status-online'></p>
-                    <h4 className = 'status-text'>online</h4>
+                    <div className = 'status-online'></div>
+                    <p className = 'status-text'>online</p>
                 </div>
             </div>
         </div>
