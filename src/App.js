@@ -1,26 +1,21 @@
 import React from 'react';
 import Contact from './components/Contact';
+import users from './components/users';
 
 
 function App() {
-  return (
+
+  const allContact = users.map(contact => (
+    <Contact 
+      name={contact.name}
+      avatar={contact.avatar}
+      online={contact.online} />
     
-    <div className="App">
-      <Contact 
-        name = 'Alexander George'
-        avatar = 'https://randomuser.me/api/portraits/men/89.jpg'
-        online />
+  ));
 
-      <Contact 
-        name = 'Beverley Mckinney'
-        avatar = 'https://randomuser.me/api/portraits/women/65.jpg'
-        online = {false} />
-
-      <Contact 
-        name = 'Jackson Spencer'
-        avatar = 'https://randomuser.me/api/portraits/men/88.jpg'
-        online /> 
-
+  return (
+    <div className="App">    
+      {allContact}
     </div>
   );
 }

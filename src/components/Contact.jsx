@@ -18,6 +18,7 @@ const Contact = (props) => {
     );
 }
 
+
 Contact.propTypes = {
     name: PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired,
